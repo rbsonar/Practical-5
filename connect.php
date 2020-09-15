@@ -11,7 +11,7 @@ if($conn->connect_error){
 }
 else{
     
-    $stmt = $conn->prepare("insert into registration(name, gender, email, age, mobile) 
+    $stmt = $conn->prepare("insert into registerdata(name, gender, email, age, mobile) 
     values(?, ?, ?, ?, ?)");
     $stmt->bind_param("sssii",$name,$gender,$email,$age,$mobile);
     $stmt->execute();
@@ -22,7 +22,7 @@ else{
 
 $connect = new mysqli('localhost','root','','registrationevent');
 
-$sql = "SELECT * from registration";
+$sql = "SELECT * from registerdata";
 
 $output = mysqli_query($connect, $sql);
 
