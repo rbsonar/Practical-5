@@ -35,31 +35,31 @@
                 $(document).ready(function () {
     
                     $.getJSON("data.json", function(data){
-                        var registrant = '';
+                        var registered = '';
     
                         $.each(data, function(key, value) {
-                            registrant += '<tr>';
-                            registrant += '<td>' +
+                            registered += '<tr>';
+                            registered += '<td>' +
                                 value.name + '</td>';
                             
-                            registrant += '<td>' +
+                            registered += '<td>' +
                                 value.gender + '</td>';
     
-                            registrant += '<td>' +
+                            registered += '<td>' +
                                 value.email + '</td>';
                              
-                            registrant += '<td>' +
+                            registered += '<td>' +
                                 value.age + '</td>';
                                 
-                            registrant += '<td>' +
+                            registered += '<td>' +
                                 value.mobile + '</td>';
     
-                                registrant += '</tr>';
+                                registered += '</tr>';
     
     
                         });
     
-                        $('#t1').append(registrant);
+                        $('#t1').append(registered);
                     });
     
                 });
