@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>
+            Registered users
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="bg">
+            <div class="navigation">
+                <a href="home.html">Home</a>
+                <a href="form.html">Form</a>
+                <a href="registered.html">Registered</a>
+                
+                
+            </div>
+            <div class="registeredheading">
+                <p>Registered</p>
+            </div>
+            <div class="table">
+                <table name="table" id="t1">
+                    <tr>
+                        <th>NAME</th>
+                        <th>GENDER</th>
+                        <th>EMAIL_ID</th>
+                        <th>AGE</th>
+                        <th>MOBILE NO</th>    
+                    </tr>
+                </table>
+            </div>
+    
+            <script>
+                $(document).ready(function () {
+    
+                    $.getJSON("data.json", function(data){
+                        var registrant = '';
+    
+                        $.each(data, function(key, value) {
+                            registrant += '<tr>';
+                            registrant += '<td>' +
+                                value.name + '</td>';
+                            
+                            registrant += '<td>' +
+                                value.gender + '</td>';
+    
+                            registrant += '<td>' +
+                                value.email + '</td>';
+                             
+                            registrant += '<td>' +
+                                value.age + '</td>';
+                                
+                            registrant += '<td>' +
+                                value.mobile + '</td>';
+    
+                                registrant += '</tr>';
+    
+    
+                        });
+    
+                        $('#t1').append(registrant);
+                    });
+    
+                });
+            </script>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,136 @@
+.body html{
+    height: 100vh;
+}
+
+.bg{
+    background-image: url(homewall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    overflow: auto;
+    
+    
+   
+}
+
+.form{
+    color: wheat;
+    border: yellow solid 2px;
+    width: max-content;
+
+}
+
+.formheading{
+    color: yellowgreen;
+    font-weight: bold;
+    font-size: 35px;
+
+}
+.registeredheading{
+    color: yellowgreen;
+    font-weight: bold;
+    font-size: 35px;
+    
+}
+
+.HEADING{
+    
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(224, 105, 36);    
+}
+
+.content {
+    margin-top: 50px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    clear: left;
+    margin-left: 10px;
+    
+}
+.container{
+    border: 2px white solid;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    overflow: auto;
+    height: fit-content;
+}
+.leftside{
+    float: left;
+    padding: 10px;
+    color: lime;
+    
+}
+.rightside{
+    position: absolute;
+    display: inline;
+    margin-left: 100px;
+    color: lightsalmon;
+}
+
+
+.navigation {
+    border: chartreuse;
+
+    font-size: 20px;
+    margin: 10px;
+
+}
+.navigation a{
+    border: wheat solid 2px;
+    padding: 10px;
+    background-color: orange;
+    font-weight: bold;
+
+}
+.navigation a:hover{
+    background-color: red;
+    color: cream;
+}
+
+
+
+
+
+.heading{
+    clear: left;
+    font-size: 50px;
+    color: lavender;
+    text-align: left;
+    margin-left: 50px;
+}
+
+
+
+.table{
+	
+	width:max-content;
+	
+    
+    
+    
+}
+
+.table, th, td{
+	border: 2px solid white;
+    padding:5px;
+    
+    color: blanchedalmond;
+    padding: 5px;
+}
+
+.th{
+	font-size: 30px;
+	font-weight:700;
+	
+}
+.td{
+	font-size: 25px;
+	color : crimson;
+	font-weight: 400;
+
+}
