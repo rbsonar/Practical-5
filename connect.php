@@ -5,7 +5,7 @@ $email = $_POST['email'];
 $age = $_POST['age'];
 $mobile = $_POST['mobile'];
 
-$conn = new mysqli('localhost','root','','registrationevent');
+$conn = new mysqli('localhost','id14872836_registration','Password@123','id14872836_registrationevent');
 if($conn->connect_error){
     die('connection failed :'.$conn->connect_error);
 }
@@ -18,9 +18,11 @@ else{
     echo "Registered successfull";
     $stmt->close();
     $conn->close();
+
+    
 }
 
-$connect = new mysqli('localhost','root','','registrationevent');
+$connect = new mysqli('localhost','id14872836_registration','Password@123','id14872836_registrationevent');
 
 $sql = "SELECT * from registerdata";
 
